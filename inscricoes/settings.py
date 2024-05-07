@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-tzf&g08(*20ue9#x(a&%p!g26d1@34!-s^8b=te2s=r^9e0yk3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['pix-inscricoes.onrender.com']
 
 
 # Application definition
