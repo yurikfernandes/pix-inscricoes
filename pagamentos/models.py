@@ -29,6 +29,9 @@ class Pagamento(models.Model):
             "expiracao": self.expiracao
         }
         response = EfiConnector.create_pix_immediate_charge(payload)
+        if response.status_code not in [200, 201]:
+            raise
+
         response_data = response.json()
         
         self.txid = response_data.get('txid')
